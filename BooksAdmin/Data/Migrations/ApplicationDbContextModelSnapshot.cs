@@ -36,7 +36,7 @@ namespace BooksAdmin.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Author", (string)null);
+                    b.ToTable("Author");
 
                     b.HasData(
                         new
@@ -96,7 +96,7 @@ namespace BooksAdmin.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Book", (string)null);
+                    b.ToTable("Book");
                 });
 
             modelBuilder.Entity("BooksAdmin.Models.Publisher", b =>
@@ -113,7 +113,7 @@ namespace BooksAdmin.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Publisher", (string)null);
+                    b.ToTable("Publisher");
 
                     b.HasData(
                         new

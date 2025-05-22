@@ -29,7 +29,7 @@ namespace BooksAdmin.Data.Migrations
             sqlUser.AppendLine(", 'ADMIN@ADMIN.COM'");      // NormalizedEmail
             sqlUser.AppendLine(", 1");                      // EmailConfirmed
             sqlUser.AppendLine($", '{passwordHash}'");      // PasswordHash
-            sqlUser.AppendLine($"'{ADMIN_USER_GUID}'");     // SecurityStamp
+            sqlUser.AppendLine($", '{ADMIN_USER_GUID}'");     // SecurityStamp
             sqlUser.AppendLine(", NULL");                   // ConcurrencyStamp
             sqlUser.AppendLine(", NULL");                   // PhoneNumber
             sqlUser.AppendLine(", 0");                      // PhoneNumberConfirmed

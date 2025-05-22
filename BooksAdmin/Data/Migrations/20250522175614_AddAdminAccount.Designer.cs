@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BooksAdmin.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250520182129_AddAdminAccount")]
+    [Migration("20250522175614_AddAdminAccount")]
     partial class AddAdminAccount
     {
         /// <inheritdoc />
