@@ -29,3 +29,4 @@ ENV ASPNETCORE_ENVIRONMENT=Production
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "BooksAdmin.dll"]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet BooksAdmin.dll
